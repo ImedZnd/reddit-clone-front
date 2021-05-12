@@ -6,6 +6,6 @@ export class PostModel {
     voteCount: number;
     userName: string;
     subredditName: string;
-    commentCount: number;
+    commentNum: number;
     duration: string;
 }

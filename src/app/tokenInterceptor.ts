@@ -5,7 +5,6 @@ import { AuthService } from './auth/shared/auth.service';
 import { catchError, switchMap, take, filter } from 'rxjs/operators';
 import { LoginResponsePayload } from './model/login-response.payload';
 
-
 @Injectable({
     providedIn: 'root'
 })

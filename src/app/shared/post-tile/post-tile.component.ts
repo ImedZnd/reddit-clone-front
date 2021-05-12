@@ -13,6 +13,7 @@ export class PostTileComponent implements OnInit {
 
   faComments = faComments;
   @Input() posts: PostModel[];
+  @Input() data: Array<PostModel>;
 
   constructor(private router: Router) {
    }
@@ -20,6 +21,6 @@ export class PostTileComponent implements OnInit {
   ngOnInit(): void {
   }
   goToPost(id:number){
-
+    this.router.navigateByUrl('/view-post/'+id);
   }
 }
